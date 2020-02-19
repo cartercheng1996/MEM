@@ -318,3 +318,402 @@ selectCodeEditor("testbench.vhd", 86, 333); // ch (w, cr)
 typeControlKey(null, null, 'z');
 // TclEventType: DG_GRAPH_STALE
 // TclEventType: FILE_SET_CHANGE
+// Elapsed time: 234 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // i (h, cr)
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tb_vhdl_assignment_simple(test) (testbench.vhd), uut : top(rtl) (design.vhd)]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tb_vhdl_assignment_simple(test) (testbench.vhd), uut : top(rtl) (design.vhd)]", 2, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tb_vhdl_assignment_simple(test) (testbench.vhd), uut : top(rtl) (design.vhd)]", 2, true); // B (F, cr) - Node
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tb_vhdl_assignment_simple(test) (testbench.vhd), uut : top(rtl) (design.vhd), u_fsm : register_fsm(rtl) (register_fsm.vhd)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tb_vhdl_assignment_simple(test) (testbench.vhd), uut : top(rtl) (design.vhd), u_fsm : register_fsm(rtl) (register_fsm.vhd)]", 3, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tb_vhdl_assignment_simple(test) (testbench.vhd), uut : top(rtl) (design.vhd), u_fsm : register_fsm(rtl) (register_fsm.vhd)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tb_vhdl_assignment_simple(test) (testbench.vhd), uut : top(rtl) (design.vhd), u_mem : memory_model(beh) (memory_model.vhd)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tb_vhdl_assignment_simple(test) (testbench.vhd), uut : top(rtl) (design.vhd), u_mem : memory_model(beh) (memory_model.vhd)]", 4, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Elapsed time: 68 seconds
+selectCodeEditor("memory_model.vhd", 58, 331); // ch (w, cr)
+typeControlKey((HResource) null, "memory_model.vhd", 'v'); // ch (w, cr)
+selectButton("OptionPane.button", "No"); // JButton (A, G)
+typeControlKey(null, null, 'z');
+selectCodeEditor("memory_model.vhd", 87, 301, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ai (ao, cr)
+selectButton("OptionPane.button", "Yes"); // JButton (A, G)
+// Elapsed time: 41 seconds
+selectCodeEditor("memory_model.vhd", 293, 358); // ch (w, cr)
+typeControlKey(null, null, 'z');
+// Elapsed time: 92 seconds
+selectCodeEditor("memory_model.vhd", 91, 387); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 23 seconds
+selectCodeEditor("memory_model.vhd", 54, 363); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 31, 339); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 31, 338, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ai (ao, cr)
+selectButton("OptionPane.button", "Yes"); // JButton (A, G)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tb_vhdl_assignment_simple(test) (testbench.vhd), uut : top(rtl) (design.vhd), u_mem : memory_model(beh) (memory_model.vhd)]", 4, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top memory_model [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 16 seconds
+selectCodeEditor("memory_model.vhd", 259, 298); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 5, 293); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 1, 292); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 209, 295); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 41, 212); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 384, 299); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 95, 440); // ch (w, cr)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("memory_model.vhd", 128, 445); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 157, 414); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 152, 448); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 214, 368); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 159, 445); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// D (cr): Invalid Top Module: addNotify
+// Elapsed time: 17 seconds
+selectRadioButton(PAResourceEtoH.FloatingTopDialog_SPECIFY_NEW_TOP_MODULE, "Specify a new top module:"); // a (Q, D)
+dismissDialog("Invalid Top Module"); // D (cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("memory_model.vhd", 283, 400); // ch (w, cr)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 32 seconds
+selectCodeEditor("memory_model.vhd", 50, 451); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 60, 464); // ch (w, cr)
+// Elapsed time: 29 seconds
+selectCodeEditor("memory_model.vhd", 213, 177); // ch (w, cr)
+// Elapsed time: 15 seconds
+selectCodeEditor("memory_model.vhd", 50, 425); // ch (w, cr)
+// Elapsed time: 17 seconds
+selectCodeEditor("memory_model.vhd", 40, 447); // ch (w, cr)
+// Elapsed time: 39 seconds
+selectCodeEditor("memory_model.vhd", 14, 486); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 14, 485, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ai (ao, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 15 seconds
+selectCodeEditor("memory_model.vhd", 170, 331); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 196, 386); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 345, 474); // ch (w, cr)
+// Elapsed time: 131 seconds
+selectCodeEditor("memory_model.vhd", 82, 237); // ch (w, cr)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("memory_model.vhd", 190, 292); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 18 seconds
+selectCodeEditor("memory_model.vhd", 224, 208); // ch (w, cr)
+// Elapsed time: 15 seconds
+selectCodeEditor("memory_model.vhd", 84, 224); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("memory_model.vhd", 126, 239); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 366, 337); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 17 seconds
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "memory_model.vhd", 3, true, false); // i (h, cr) - Popup Trigger
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "memory_model.vhd", 3); // i (h, cr)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "memory_model.vhd", 3, true, false); // i (h, cr) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tb_vhdl_assignment_simple(test) (testbench.vhd), uut : top(rtl) (design.vhd), u_mem : memory_model(beh) (memory_model.vhd)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tb_vhdl_assignment_simple(test) (testbench.vhd), uut : top(rtl) (design.vhd), u_mem : memory_model(beh) (memory_model.vhd)]", 4, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_GOTO_INSTANTIATION, "Go to Source"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_INSTANTIATION
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tb_vhdl_assignment_simple(test) (testbench.vhd), uut : top(rtl) (design.vhd), u_mem : memory_model(beh) (memory_model.vhd)]", 4, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Source Node Properties..."); // ai (ao, cr)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tb_vhdl_assignment_simple(test) (testbench.vhd), uut : top(rtl) (design.vhd), u_mem : memory_model(beh) (memory_model.vhd)]", 4, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cr)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cr)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenuItem(PAResourceQtoS.SrcMenu_OPEN_SELECTED_SOURCE_FILES, "Open File"); // ai (ao, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tb_vhdl_assignment_simple(test) (testbench.vhd), uut : top(rtl) (design.vhd), u_mem : memory_model(beh) (memory_model.vhd)]", 4, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 50 seconds
+selectCodeEditor("memory_model.vhd", 604, 222); // ch (w, cr)
+// Elapsed time: 167 seconds
+selectCodeEditor("memory_model.vhd", 240, 183); // ch (w, cr)
+// Elapsed time: 21 seconds
+selectCodeEditor("memory_model.vhd", 145, 234); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 663, 159); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 851 MB. GUI used memory: 64 MB. Current time: 2/19/20, 10:27:42 PM AEDT
+// Elapsed time: 1104 seconds
+selectCodeEditor("memory_model.vhd", 61, 391); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 107, 394); // ch (w, cr)
+// [Engine Memory]: 853 MB (+1439kb) [00:48:09]
+// HMemoryUtils.trashcanNow. Engine heap size: 853 MB. GUI used memory: 57 MB. Current time: 2/19/20, 10:57:42 PM AEDT
+// Elapsed time: 1199 seconds
+selectCodeEditor("memory_model.vhd", 111, 316); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 168, 233); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 409, 307); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 494, 235); // ch (w, cr)
+// Elapsed time: 30 seconds
+selectCodeEditor("memory_model.vhd", 76, 236); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 48, 238); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 54, 238); // ch (w, cr)
+// Elapsed time: 19 seconds
+selectCodeEditor("memory_model.vhd", 137, 307); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 272, 417); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 623, 240); // ch (w, cr)
+// Elapsed time: 16 seconds
+selectCodeEditor("memory_model.vhd", 472, 250); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("memory_model.vhd", 598, 285); // ch (w, cr)
+// Elapsed time: 13 seconds
+selectCodeEditor("memory_model.vhd", 323, 230); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 17 seconds
+selectCodeEditor("memory_model.vhd", 429, 214); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 29, 222); // ch (w, cr)
+// Elapsed time: 33 seconds
+selectCodeEditor("memory_model.vhd", 135, 504); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 128, 282); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 101, 256); // ch (w, cr)
+// Elapsed time: 17 seconds
+selectCodeEditor("memory_model.vhd", 358, 257); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 137, 405); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 322, 273); // ch (w, cr)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 14 seconds
+selectCodeEditor("memory_model.vhd", 122, 404); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("memory_model.vhd", 103, 263); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 187, 310); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 182, 283); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("memory_model.vhd", 173, 274); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 200, 253); // ch (w, cr)
+// Elapsed time: 17 seconds
+selectCodeEditor("memory_model.vhd", 177, 276); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 274, 302); // ch (w, cr)
+// Elapsed time: 17 seconds
+selectCodeEditor("memory_model.vhd", 278, 385); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 274, 391); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 270, 386); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 270, 386); // ch (w, cr)
+// Elapsed time: 36 seconds
+selectCodeEditor("memory_model.vhd", 397, 399); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 320, 391); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 328, 391); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 395, 386); // ch (w, cr)
+typeControlKey((HResource) null, "memory_model.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 192, 428); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 178, 410); // ch (w, cr)
+// Elapsed time: 28 seconds
+selectCodeEditor("memory_model.vhd", 78, 403); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 54, 403); // ch (w, cr)
+typeControlKey((HResource) null, "memory_model.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 179, 407); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 154 seconds
+selectCodeEditor("memory_model.vhd", 131, 414); // ch (w, cr)
+// Elapsed time: 28 seconds
+selectCodeEditor("memory_model.vhd", 55, 407); // ch (w, cr)
+// Elapsed time: 14 seconds
+selectCodeEditor("memory_model.vhd", 765, 312); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 23, 313); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 743, 318); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 0, 356); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 523, 389); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 525, 393); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 72, 329); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 76, 297); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 811, 296); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 24, 298); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 67, 388); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 72, 387); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 1, 466); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 68, 450); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 74, 457); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 59, 463); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("memory_model.vhd", 0, 433); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 98, 454); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 178, 452); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("memory_model.vhd", 18, 424); // ch (w, cr)
+typeControlKey(null, null, 'z');
+// D (cr): Invalid Top Module: addNotify
+dismissDialog("Invalid Top Module"); // D (cr)
+selectCodeEditor("memory_model.vhd", 54, 421); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 29, 416); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 24, 425); // ch (w, cr)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("memory_model.vhd", 111, 438); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 20 seconds
+selectCodeEditor("memory_model.vhd", 3, 467); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 52, 483); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 40, 405); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 0, 429); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectCodeEditor("memory_model.vhd", 45, 413); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 49, 413); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 47, 412); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 238, 441); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("memory_model.vhd", 136, 399); // ch (w, cr)
+// Elapsed time: 106 seconds
+selectCodeEditor("memory_model.vhd", 77, 364); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 143, 422); // ch (w, cr)
+// Elapsed time: 66 seconds
+selectCodeEditor("memory_model.vhd", 158, 295); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 110, 433); // ch (w, cr)
+// Elapsed time: 68 seconds
+selectCodeEditor("memory_model.vhd", 152, 367); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("memory_model.vhd", 97, 371); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("memory_model.vhd", 179, 374); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 17 seconds
+selectCodeEditor("memory_model.vhd", 70, 392); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 55, 329); // ch (w, cr)
+typeControlKey((HResource) null, "memory_model.vhd", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("memory_model.vhd", 74, 333); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectCodeEditor("memory_model.vhd", 342, 333); // ch (w, cr)
+selectCodeEditor("memory_model.vhd", 184, 350); // ch (w, cr)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "memory_model.vhd", 3, true, false); // i (h, cr) - Popup Trigger
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 38 seconds
+selectCodeEditor("memory_model.vhd", 668, 355); // ch (w, cr)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tb_vhdl_assignment_simple(test) (testbench.vhd), uut : top(rtl) (design.vhd), u_mem : memory_model(beh) (memory_model.vhd)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tb_vhdl_assignment_simple(test) (testbench.vhd), uut : top(rtl) (design.vhd), u_mem : memory_model(beh) (memory_model.vhd)]", 4, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tb_vhdl_assignment_simple(test) (testbench.vhd), uut : top(rtl) (design.vhd), u_mem : memory_model(beh) (memory_model.vhd)]", 4, false); // B (F, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// D (cr): Invalid Top Module: addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 294 seconds
+dismissDialog("Invalid Top Module"); // D (cr)
+selectCodeEditor("memory_model.vhd", 362, 206); // ch (w, cr)
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h (ds, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 58 seconds
+selectCodeEditor("memory_model.vhd", 226, 196); // ch (w, cr)
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h (ds, cr)
+selectCodeEditor("memory_model.vhd", 295, 216); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 860 MB. GUI used memory: 57 MB. Current time: 2/19/20, 11:27:43 PM AEDT

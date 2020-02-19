@@ -16,8 +16,17 @@ entity memory_model is
     );
 end entity memory_model;
 
+
 architecture beh of memory_model is
-
-begin
-
+    
+    type ary_mem is array(0 to 255) of std_logic_vector(31 downto 0); -- define an 4 byte address arrary,with 32 bit width 
+    signal data_mem : ary_mem; -- Memory-data array declartion
+    
+    begin
+        process (clk) begin
+          if rising_edge(clk) then
+          end if;
+              
+              
+        end process;
 end architecture beh;
