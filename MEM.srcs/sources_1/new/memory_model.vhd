@@ -25,7 +25,7 @@ architecture beh of memory_model is
     signal ack_flag: std_logic;
     
     begin
-        process (clk) begin
+        process (clk,reset) begin
           if rising_edge(clk) then -- active edge clock
             if (reset = '1') then --synchronous active high reset
               -- memory initialisation

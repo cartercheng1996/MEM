@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="register_fsm_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="register_fsm" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="19167fs"></ZoomStartTime>
+      <ZoomEndTime time="384168fs"></ZoomEndTime>
+      <Cursor1Time time="80000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="126"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="24" />
+   <wvobject fp_name="/register_fsm/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/register_fsm/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/register_fsm/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/register_fsm/data_in_vld" type="logic">
+      <obj_property name="ElementShortName">data_in_vld</obj_property>
+      <obj_property name="ObjectShortName">data_in_vld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/register_fsm/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/register_fsm/data_out_vld" type="logic">
+      <obj_property name="ElementShortName">data_out_vld</obj_property>
+      <obj_property name="ObjectShortName">data_out_vld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/register_fsm/addr" type="array">
+      <obj_property name="ElementShortName">addr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/register_fsm/wr_data" type="array">
+      <obj_property name="ElementShortName">wr_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/register_fsm/wr_en" type="logic">
+      <obj_property name="ElementShortName">wr_en</obj_property>
+      <obj_property name="ObjectShortName">wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/register_fsm/rd_en" type="logic">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/register_fsm/rd_data" type="array">
+      <obj_property name="ElementShortName">rd_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/register_fsm/rd_ack" type="logic">
+      <obj_property name="ElementShortName">rd_ack</obj_property>
+      <obj_property name="ObjectShortName">rd_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/register_fsm/curr_state" type="other">
+      <obj_property name="ElementShortName">curr_state</obj_property>
+      <obj_property name="ObjectShortName">curr_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/register_fsm/next_state" type="other">
+      <obj_property name="ElementShortName">next_state</obj_property>
+      <obj_property name="ObjectShortName">next_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/register_fsm/dataReaded_buff" type="array">
+      <obj_property name="ElementShortName">dataReaded_buff[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dataReaded_buff[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/register_fsm/addrReaded_buff" type="array">
+      <obj_property name="ElementShortName">addrReaded_buff[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addrReaded_buff[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/register_fsm/writeFlag" type="logic">
+      <obj_property name="ElementShortName">writeFlag</obj_property>
+      <obj_property name="ObjectShortName">writeFlag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/register_fsm/addrCounter" type="other">
+      <obj_property name="ElementShortName">addrCounter</obj_property>
+      <obj_property name="ObjectShortName">addrCounter</obj_property>
+   </wvobject>
+   <wvobject fp_name="/register_fsm/dataCounter" type="other">
+      <obj_property name="ElementShortName">dataCounter</obj_property>
+      <obj_property name="ObjectShortName">dataCounter</obj_property>
+   </wvobject>
+   <wvobject fp_name="/register_fsm/E7" type="array">
+      <obj_property name="ElementShortName">E7[7:0]</obj_property>
+      <obj_property name="ObjectShortName">E7[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/register_fsm/READ" type="array">
+      <obj_property name="ElementShortName">READ[7:0]</obj_property>
+      <obj_property name="ObjectShortName">READ[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/register_fsm/WRITE" type="array">
+      <obj_property name="ElementShortName">WRITE[7:0]</obj_property>
+      <obj_property name="ObjectShortName">WRITE[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/register_fsm/READ_DATA" type="array">
+      <obj_property name="ElementShortName">READ_DATA[7:0]</obj_property>
+      <obj_property name="ObjectShortName">READ_DATA[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/register_fsm/BREAK" type="array">
+      <obj_property name="ElementShortName">BREAK[7:0]</obj_property>
+      <obj_property name="ObjectShortName">BREAK[7:0]</obj_property>
+   </wvobject>
+</wave_config>
