@@ -1,0 +1,94 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Feb 21 08:19:48 2020
+# Process ID: 11560
+# Current directory: C:/Users/chine/Desktop/MEM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17852 C:\Users\chine\Desktop\MEM\MEM.xpr
+# Log file: C:/Users/chine/Desktop/MEM/vivado.log
+# Journal file: C:/Users/chine/Desktop/MEM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/chine/Desktop/MEM/MEM.xpr
+pdate_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {23 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {aa 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {55 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {aa 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {01 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {23 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+restart

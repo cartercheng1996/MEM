@@ -1,0 +1,37 @@
+restart
+add_force {/top/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/top/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/top/reset} -radix hex {0 0ns}
+run 10ns
+add_force {/top/data_in_vld} -radix hex {1 0ns}
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {23 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {01 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {aa 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {55 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {01 0ns}
+run 100ns

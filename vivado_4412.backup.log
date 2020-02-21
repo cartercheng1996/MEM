@@ -1,0 +1,1094 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Feb 19 21:50:26 2020
+# Process ID: 4412
+# Current directory: C:/Users/chine/Desktop/MEM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13920 C:\Users\chine\Desktop\MEM\MEM.xpr
+# Log file: C:/Users/chine/Desktop/MEM/vivado.log
+# Journal file: C:/Users/chine/Desktop/MEM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/chine/Desktop/MEM/MEM.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_vhdl_assignment_simple' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_vhdl_assignment_simple_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/register_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'register_fsm'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/memory_model.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'memory_model'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/design.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/testbench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_vhdl_assignment_simple'
+ERROR: [VRFC 10-3462] indexed name is not a 'bit_vector' [C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/testbench.vhd:48]
+ERROR: [VRFC 10-1471] type error near data_in ; current type std_logic_vector; expected type bit_vector [C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/testbench.vhd:48]
+ERROR: [VRFC 10-3782] unit 'test' ignored due to previous errors [C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/testbench.vhd:11]
+INFO: [VRFC 10-3070] VHDL file 'C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/testbench.vhd' ignored due to errors
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 867.684 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '11' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 867.684 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_vhdl_assignment_simple' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_vhdl_assignment_simple_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/register_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'register_fsm'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/memory_model.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'memory_model'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/design.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/testbench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_vhdl_assignment_simple'
+ERROR: [VRFC 10-4982] syntax error near 'exit' [C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/testbench.vhd:49]
+ERROR: [VRFC 10-3782] unit 'test' ignored due to previous errors [C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/testbench.vhd:11]
+INFO: [VRFC 10-3070] VHDL file 'C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/testbench.vhd' ignored due to errors
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 867.684 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '8' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 867.684 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_vhdl_assignment_simple' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_vhdl_assignment_simple_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/register_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'register_fsm'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/memory_model.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'memory_model'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/design.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/testbench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_vhdl_assignment_simple'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 867.684 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+"xelab -wto 4c85156f26b4429fb9d533a5abbad449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_vhdl_assignment_simple_behav xil_defaultlib.tb_vhdl_assignment_simple -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 4c85156f26b4429fb9d533a5abbad449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_vhdl_assignment_simple_behav xil_defaultlib.tb_vhdl_assignment_simple -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture rtl of entity xil_defaultlib.register_fsm [register_fsm_default]
+Compiling architecture beh of entity xil_defaultlib.memory_model [memory_model_default]
+Compiling architecture rtl of entity xil_defaultlib.top [top_default]
+Compiling architecture test of entity xil_defaultlib.tb_vhdl_assignment_simple
+Built simulation snapshot tb_vhdl_assignment_simple_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim/xsim.dir/tb_vhdl_assignment_simple_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim/xsim.dir/tb_vhdl_assignment_simple_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Feb 19 21:57:33 2020. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 92.523 ; gain = 0.000
+INFO: [Common 17-206] Exiting Webtalk at Wed Feb 19 21:57:33 2020...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:29 . Memory (MB): peak = 867.684 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '29' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_vhdl_assignment_simple_behav -key {Behavioral:sim_1:Functional:tb_vhdl_assignment_simple} -tclbatch {tb_vhdl_assignment_simple.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_vhdl_assignment_simple.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 898.473 ; gain = 20.023
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_vhdl_assignment_simple_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:44 . Memory (MB): peak = 898.473 ; gain = 30.789
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 899.148 ; gain = 0.676
+set_property top memory_model [current_fileset]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_vhdl_assignment_simple' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_vhdl_assignment_simple_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/memory_model.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'memory_model'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/design.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/testbench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_vhdl_assignment_simple'
+ERROR: [VRFC 10-3462] indexed name is not a 'bit_vector' [C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/testbench.vhd:48]
+ERROR: [VRFC 10-1471] type error near data_in ; current type std_logic_vector; expected type bit_vector [C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/testbench.vhd:48]
+ERROR: [VRFC 10-3782] unit 'test' ignored due to previous errors [C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/testbench.vhd:11]
+INFO: [VRFC 10-3070] VHDL file 'C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/testbench.vhd' ignored due to errors
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 902.758 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '8' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 902.758 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+export_ip_user_files -of_objects  [get_files C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/register_fsm.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/register_fsm.vhd
+file delete -force C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/register_fsm.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/design.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/design.vhd
+file delete -force C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/design.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/testbench.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/testbench.vhd
+file delete -force C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/testbench.vhd
+remove_files  C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/testbench.vhd
+WARNING: [Vivado 12-818] No files matched 'C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/testbench.vhd'
+remove_files  C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/testbench.vhd
+WARNING: [Vivado 12-818] No files matched 'C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/testbench.vhd'
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'memory_model' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj memory_model_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/memory_model.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'memory_model'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+"xelab -wto 4c85156f26b4429fb9d533a5abbad449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot memory_model_behav xil_defaultlib.memory_model -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 4c85156f26b4429fb9d533a5abbad449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot memory_model_behav xil_defaultlib.memory_model -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture beh of entity xil_defaultlib.memory_model
+Built simulation snapshot memory_model_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim/xsim.dir/memory_model_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim/xsim.dir/memory_model_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Feb 20 10:14:59 2020. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 92.523 ; gain = 0.000
+INFO: [Common 17-206] Exiting Webtalk at Thu Feb 20 10:14:59 2020...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:24 . Memory (MB): peak = 903.703 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '24' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "memory_model_behav -key {Behavioral:sim_1:Functional:memory_model} -tclbatch {memory_model.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source memory_model.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'memory_model_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:32 . Memory (MB): peak = 912.965 ; gain = 9.262
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 912.965 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 912.965 ; gain = 0.000
+add_force {/memory_model/clk} -radix bin {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/memory_model/reset} -radix hex {1 0ns}
+run 100ns
+add_force {/memory_model/wr_en} -radix hex {0 0ns}
+add_force {/memory_model/rd_en} -radix hex {0 0ns}
+run 500 ns
+add_force {/memory_model/rd_en} -radix hex {1 0ns}
+add_force {/memory_model/addr} -radix hex {0 0ns}
+run 100ns
+add_force {/memory_model/rd_en} -radix hex {0 0ns}
+run 100ns
+run 100ns
+add_force {/memory_model/reset} -radix hex {0 0ns}
+run 100ns
+run 300 ns
+add_force {/memory_model/rd_en} -radix hex {1 0ns}
+run 100ns
+add_force {/memory_model/rd_en} -radix hex {0 0ns}
+run 100ns
+run 100ns
+run 100ns
+add_force {/memory_model/wr_data} -radix hex {00000000 0ns}
+add_force {/memory_model/addr} -radix hex {0 0ns}
+add_force {/memory_model/wr_en} -radix hex {1 0ns}
+run 100ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 923.547 ; gain = 1.051
+close [ open C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/register_fsm.vhd w ]
+add_files C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/register_fsm.vhd
+update_compile_order -fileset sources_1
+set_property top register_fsm [current_fileset]
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\register_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\memory_model.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\chine\Desktop\MEM\MEM.srcs\sources_1\new\design.vhd:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'memory_model' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj memory_model_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/memory_model.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'memory_model'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 938.254 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '12' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+"xelab -wto 4c85156f26b4429fb9d533a5abbad449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot memory_model_behav xil_defaultlib.memory_model -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 4c85156f26b4429fb9d533a5abbad449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot memory_model_behav xil_defaultlib.memory_model -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture beh of entity xil_defaultlib.memory_model
+Built simulation snapshot memory_model_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:17 . Memory (MB): peak = 938.254 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '17' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "memory_model_behav -key {Behavioral:sim_1:Functional:memory_model} -tclbatch {memory_model.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source memory_model.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 938.254 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'memory_model_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:40 . Memory (MB): peak = 938.254 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 938.254 ; gain = 0.000
+add_force {/memory_model/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/memory_model/reset} -radix hex {1 0ns}
+run 100
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'memory_model' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj memory_model_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+"xelab -wto 4c85156f26b4429fb9d533a5abbad449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot memory_model_behav xil_defaultlib.memory_model -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 4c85156f26b4429fb9d533a5abbad449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot memory_model_behav xil_defaultlib.memory_model -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 938.254 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "memory_model_behav -key {Behavioral:sim_1:Functional:memory_model} -tclbatch {memory_model.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source memory_model.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 938.254 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'memory_model_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:24 . Memory (MB): peak = 938.254 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top register_fsm [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'register_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj register_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/register_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'register_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+"xelab -wto 4c85156f26b4429fb9d533a5abbad449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot register_fsm_behav xil_defaultlib.register_fsm -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 4c85156f26b4429fb9d533a5abbad449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot register_fsm_behav xil_defaultlib.register_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2335] case statement does not cover all choices. 'others' clause is needed [C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/register_fsm.vhd:66]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit register_fsm in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 945.297 ; gain = 7.043
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'register_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj register_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/register_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'register_fsm'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 945.297 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+"xelab -wto 4c85156f26b4429fb9d533a5abbad449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot register_fsm_behav xil_defaultlib.register_fsm -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 4c85156f26b4429fb9d533a5abbad449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot register_fsm_behav xil_defaultlib.register_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture rtl of entity xil_defaultlib.register_fsm
+Built simulation snapshot register_fsm_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim/xsim.dir/register_fsm_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim/xsim.dir/register_fsm_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Feb 20 14:33:39 2020. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 79.984 ; gain = 11.488
+INFO: [Common 17-206] Exiting Webtalk at Thu Feb 20 14:33:39 2020...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 945.297 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '21' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "register_fsm_behav -key {Behavioral:sim_1:Functional:register_fsm} -tclbatch {register_fsm.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Time resolution is 1 ps
+source register_fsm.tcl
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:36 . Memory (MB): peak = 945.297 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 945.297 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'register_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj register_fsm_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+"xelab -wto 4c85156f26b4429fb9d533a5abbad449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot register_fsm_behav xil_defaultlib.register_fsm -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 4c85156f26b4429fb9d533a5abbad449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot register_fsm_behav xil_defaultlib.register_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 945.297 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "register_fsm_behav -key {Behavioral:sim_1:Functional:register_fsm} -tclbatch {register_fsm.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source register_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+add_wave: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 945.297 ; gain = 0.000
+# run 1000ns
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 945.297 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'register_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:22 . Memory (MB): peak = 945.297 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 945.297 ; gain = 0.000
+add_force {/register_fsm/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 20ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+run 30 ns
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10 ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+ERROR: Array sizes do not match, left array has 0 elements, right array has 8 elements
+Time: 65 ns  Iteration: 1  Process: /register_fsm/line__53
+  File: C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/register_fsm.vhd
+
+HDL Line: C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/register_fsm.vhd:84
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10 ns
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+run 10 ns
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'register_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj register_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/register_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'register_fsm'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+"xelab -wto 4c85156f26b4429fb9d533a5abbad449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot register_fsm_behav xil_defaultlib.register_fsm -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 4c85156f26b4429fb9d533a5abbad449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot register_fsm_behav xil_defaultlib.register_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture rtl of entity xil_defaultlib.register_fsm
+Built simulation snapshot register_fsm_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 945.297 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "register_fsm_behav -key {Behavioral:sim_1:Functional:register_fsm} -tclbatch {register_fsm.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source register_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+add_wave: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 945.297 ; gain = 0.000
+# run 1000ns
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 945.297 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'register_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:27 . Memory (MB): peak = 945.297 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 945.297 ; gain = 0.000
+add_force {/register_fsm/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10 ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+run 10ns
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'register_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj register_fsm_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+"xelab -wto 4c85156f26b4429fb9d533a5abbad449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot register_fsm_behav xil_defaultlib.register_fsm -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 4c85156f26b4429fb9d533a5abbad449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot register_fsm_behav xil_defaultlib.register_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "register_fsm_behav -key {Behavioral:sim_1:Functional:register_fsm} -tclbatch {register_fsm.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source register_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+add_wave: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 945.297 ; gain = 0.000
+# run 1000ns
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 945.297 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'register_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 945.297 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 945.297 ; gain = 0.000
+add_force {/register_fsm/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10 ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10 ns
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+set_property xsim.view C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg [get_filesets sim_1]
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'register_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj register_fsm_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/register_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'register_fsm'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 946.809 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '10' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+"xelab -wto 4c85156f26b4429fb9d533a5abbad449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot register_fsm_behav xil_defaultlib.register_fsm -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 4c85156f26b4429fb9d533a5abbad449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot register_fsm_behav xil_defaultlib.register_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture rtl of entity xil_defaultlib.register_fsm
+Built simulation snapshot register_fsm_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 946.809 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "register_fsm_behav -key {Behavioral:sim_1:Functional:register_fsm} -tclbatch {register_fsm.tcl} -view {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+open_wave_config: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 946.809 ; gain = 0.000
+source register_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 946.809 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'register_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:34 . Memory (MB): peak = 946.809 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 946.809 ; gain = 0.000
+add_force {/register_fsm/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10 ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10 ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10 ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10 ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10 ns
+add_force {/register_fsm/data_in} -radix hex {03 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 100ns
+run 5 ns
+report_drivers {/register_fsm/reset}
+Drivers for /register_fsm/reset
+WARNING: [Simtcl 6-138] /register_fsm/reset : has no driver.
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+run 10 ns
+add_force {/register_fsm/data_in_vld} -radix hex {0 0ns}
+run 100ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {11 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {33 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {44 0ns}
+run 10ns
+run 10ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 20 15:45:14 2020...

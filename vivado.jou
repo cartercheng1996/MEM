@@ -2,10 +2,10 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Wed Feb 19 21:50:26 2020
-# Process ID: 4412
+# Start of session at: Fri Feb 21 08:26:02 2020
+# Process ID: 28372
 # Current directory: C:/Users/chine/Desktop/MEM
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13920 C:\Users\chine\Desktop\MEM\MEM.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20460 C:\Users\chine\Desktop\MEM\MEM.xpr
 # Log file: C:/Users/chine/Desktop/MEM/vivado.log
 # Journal file: C:/Users/chine/Desktop/MEM\vivado.jou
 #-----------------------------------------------------------
@@ -13,189 +13,2967 @@ start_gui
 open_project C:/Users/chine/Desktop/MEM/MEM.xpr
 update_compile_order -fileset sources_1
 launch_simulation
-launch_simulation
-launch_simulation
-source tb_vhdl_assignment_simple.tcl
-close_sim
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top memory_model [current_fileset]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-launch_simulation
-export_ip_user_files -of_objects  [get_files C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/register_fsm.vhd] -no_script -reset -force -quiet
-remove_files  C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/register_fsm.vhd
-file delete -force C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/register_fsm.vhd
-export_ip_user_files -of_objects  [get_files C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/design.vhd] -no_script -reset -force -quiet
-remove_files  C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/design.vhd
-file delete -force C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/design.vhd
-export_ip_user_files -of_objects  [get_files C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/testbench.vhd] -no_script -reset -force -quiet
-remove_files  C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/testbench.vhd
-file delete -force C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/testbench.vhd
-remove_files  C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/testbench.vhd
-remove_files  C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/testbench.vhd
-launch_simulation
-source memory_model.tcl
-restart
-restart
-add_force {/memory_model/clk} -radix bin {0 0ns} {1 50000ps} -repeat_every 100000ps
-add_force {/memory_model/reset} -radix hex {1 0ns}
-run 100ns
-add_force {/memory_model/wr_en} -radix hex {0 0ns}
-add_force {/memory_model/rd_en} -radix hex {0 0ns}
-run 500 ns
-add_force {/memory_model/rd_en} -radix hex {1 0ns}
-add_force {/memory_model/addr} -radix hex {0 0ns}
-run 100ns
-add_force {/memory_model/rd_en} -radix hex {0 0ns}
-run 100ns
-run 100ns
-add_force {/memory_model/reset} -radix hex {0 0ns}
-run 100ns
-run 300 ns
-add_force {/memory_model/rd_en} -radix hex {1 0ns}
-run 100ns
-add_force {/memory_model/rd_en} -radix hex {0 0ns}
-run 100ns
-run 100ns
-run 100ns
-add_force {/memory_model/wr_data} -radix hex {00000000 0ns}
-add_force {/memory_model/addr} -radix hex {0 0ns}
-add_force {/memory_model/wr_en} -radix hex {1 0ns}
-run 100ns
-close_sim
-close [ open C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/register_fsm.vhd w ]
-add_files C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/register_fsm.vhd
-update_compile_order -fileset sources_1
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top register_fsm [current_fileset]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-launch_simulation
-source memory_model.tcl
-restart
-add_force {/memory_model/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
-add_force {/memory_model/reset} -radix hex {1 0ns}
-run 100
-close_sim
-launch_simulation
-source memory_model.tcl
-close_sim
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top register_fsm [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-launch_simulation
-launch_simulation
-source register_fsm.tcl
-close_sim
-launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
 source register_fsm.tcl
 restart
-add_force {/register_fsm/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
 add_force {/register_fsm/reset} -radix hex {1 0ns}
-run 20ns
+run 10ns
 add_force {/register_fsm/reset} -radix hex {0 0ns}
-run 30 ns
-add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
 add_force {/register_fsm/data_in} -radix hex {e7 0ns}
-run 10 ns
-add_force {/register_fsm/data_in} -radix hex {13 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {23 0ns}
 run 10ns
 add_force {/register_fsm/data_in} -radix hex {00 0ns}
-run 10 ns
-run 10 ns
-close_sim
-launch_simulation
-source register_fsm.tcl
-restart
-add_force {/register_fsm/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
-add_force {/register_fsm/reset} -radix hex {1 0ns}
-run 10 ns
-add_force {/register_fsm/reset} -radix hex {0 0ns}
 run 10ns
-add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {01 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {aa 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {55 0ns}
+run 10ns
 add_force {/register_fsm/data_in} -radix hex {e7 0ns}
 run 10ns
 add_force {/register_fsm/data_in} -radix hex {13 0ns}
 run 10ns
 add_force {/register_fsm/data_in} -radix hex {00 0ns}
 run 10ns
-close_sim
-launch_simulation
-source register_fsm.tcl
-restart
-add_force {/register_fsm/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
-add_force {/register_fsm/reset} -radix hex {1 0ns}
-run 10ns
-add_force {/register_fsm/reset} -radix hex {0 0ns}
-add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
-add_force {/register_fsm/data_in} -radix hex {e7 0ns}
-run 10 ns
-add_force {/register_fsm/data_in} -radix hex {13 0ns}
-run 10 ns
-save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
-add_files -fileset sim_1 -norecurse C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
-set_property xsim.view C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg [get_filesets sim_1]
 add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {01 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {23 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
 run 10ns
 close_sim
 launch_simulation
 open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
 source register_fsm.tcl
 restart
-add_force {/register_fsm/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
 add_force {/register_fsm/reset} -radix hex {1 0ns}
-run 10 ns
+run 10ns
 add_force {/register_fsm/reset} -radix hex {0 0ns}
-add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
 add_force {/register_fsm/data_in} -radix hex {e7 0ns}
-run 10 ns
-add_force {/register_fsm/data_in} -radix hex {13 0ns}
-run 10 ns
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {23 0ns}
+run 10ns
 add_force {/register_fsm/data_in} -radix hex {00 0ns}
 run 10ns
 add_force {/register_fsm/data_in} -radix hex {00 0ns}
-run 10 ns
-add_force {/register_fsm/data_in} -radix hex {00 0ns}
-run 10 ns
-add_force {/register_fsm/data_in} -radix hex {03 0ns}
 run 10ns
-add_force {/register_fsm/reset} -radix hex {1 0ns}
-run 100ns
-run 5 ns
-report_drivers {/register_fsm/reset}
-add_force {/register_fsm/reset} -radix hex {0 0ns}
-run 10 ns
-add_force {/register_fsm/data_in_vld} -radix hex {0 0ns}
-run 100ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {01 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {aa 0ns}
+run 10ns
 add_force {/register_fsm/data_in} -radix hex {e7 0ns}
-add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {55 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
 run 10ns
 add_force {/register_fsm/data_in} -radix hex {13 0ns}
 run 10ns
 add_force {/register_fsm/data_in} -radix hex {00 0ns}
 run 10ns
-add_force {/register_fsm/data_in} -radix hex {11 0ns}
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
 run 10ns
-add_force {/register_fsm/data_in} -radix hex {33 0ns}
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
 run 10ns
-add_force {/register_fsm/data_in} -radix hex {44 0ns}
+add_force {/register_fsm/data_in} -radix hex {01 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {23 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {23 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {01 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {aa 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {55 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {01 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {23 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {23 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {01 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {aa 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {55 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {01 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {23 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {23 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {01 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {aa 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {55 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {01 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {23 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {23 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {aa 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {55 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {aa 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {23 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {aa 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {55 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {aa 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {01 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {23 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+run 10ns
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+close_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
 run 10ns
 run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+run 10ns
+run 10ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+run 10ns
+run 10ns
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+add_force {/register_fsm/rd_data} -radix hex {12345678 0ns}
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {12345678 0ns}
+run 10ns
+run 10ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+run 10ns
+run 10ns
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {12345678 0ns}
+run 10ns
+run 10ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {12345678 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 50 ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {12345678 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {12345678 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+close_sim
+restart
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {12345678 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {12345678 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {89abcde7e7 0ns}
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {89abcde7 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {89abcde7 0ns}
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {0 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {89abcde7 0ns}
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {0 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+run 10ns
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {89abcde7 0ns}
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {0 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+close_sim
+restart
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {12345678 0ns}
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {0 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {12345678 0ns}
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {0 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {12345678 0ns}
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {0 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {12345678 0ns}
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {0 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {12345678 0ns}
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {0 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {12345678 0ns}
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {0 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {12345678 0ns}
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {0 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {12345678 0ns}
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {0 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {12345678 0ns}
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {0 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {12345678 0ns}
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {0 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {12345678 0ns}
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {0 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {12345678 0ns}
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {0 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {12345678 0ns}
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {0 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {12345678 0ns}
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {0 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {12345678 0ns}
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {0 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {12345678 0ns}
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {0 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {12345678 0ns}
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {0 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {12345678 0ns}
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {0 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+close_sim
+restart
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {12345678 0ns}
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {0 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {12345678 0ns}
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {0 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {12345678 0ns}
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {0 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+close_sim
+restart
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {12345678 0ns}
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {0 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {12345678 0ns}
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {0 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source register_fsm.tcl
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {12345678 0ns}
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {0 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {aae755e7 0ns}
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {0 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+close_sim
+close [ open C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/design.vhd w ]
+add_files C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/design.vhd
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source top.tcl
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/top/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/top/reset} -radix hex {1 0ns}
+run 10ns
+run 10ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source top.tcl
+restart
+add_force {/top/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/top/reset} -radix hex {1 0ns}
+run 10ns
+restart
+add_force {/top/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/top/reset} -radix hex {1 0ns}
+run 10ns
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+add_force {/top/reset} -radix hex {0 0ns}
+run 10ns
+run 100ns
+add_force {/top/data_in_vld} -radix hex {1 0ns}
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+add_force {/top/data_in} -radix hex {13 0ns}
+restart
+add_force {/top/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/top/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/top/reset} -radix hex {0 0ns}
+run 10ns
+add_force {/top/data_in_vld} -radix hex {1 0ns}
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+restart
+add_force {/top/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/top/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/top/reset} -radix hex {0 0ns}
+run 10ns
+add_force {/top/data_in_vld} -radix hex {1 0ns}
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {02 0ns}
+run 10ns
+run 100ns
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source top.tcl
+restart
+add_force {/top/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/top/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/top/reset} -radix hex {0 0ns}
+run 10ns
+add_force {/top/data_in_vld} -radix hex {1 0ns}
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {02 0ns}
+run 100ns
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+restart
+add_force {/top/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/top/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/top/reset} -radix hex {0 0ns}
+run 10ns
+add_force {/top/data_in_vld} -radix hex {1 0ns}
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {02 0ns}
+run 10ns
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+run 100ns
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source top.tcl
+restart
+add_force {/top/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/top/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/top/reset} -radix hex {0 0ns}
+run 10ns
+add_force {/top/data_in_vld} -radix hex {1 0ns}
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {02 0ns}
+run 10ns
+run 100ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source top.tcl
+restart
+add_force {/top/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/top/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/top/reset} -radix hex {0 0ns}
+run 10ns
+add_force {/top/data_in_vld} -radix hex {1 0ns}
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {02 0ns}
+run 10ns
+run 100ns
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source top.tcl
+restart
+add_force {/top/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/top/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/top/reset} -radix hex {0 0ns}
+run 10ns
+add_force {/top/data_in_vld} -radix hex {1 0ns}
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {02 0ns}
+run 100ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source top.tcl
+restart
+add_force {/top/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/top/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/top/reset} -radix hex {0 0ns}
+run 10ns
+add_force {/top/data_in_vld} -radix hex {1 0ns}
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {02 0ns}
+run 100ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source top.tcl
+restart
+add_force {/top/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/top/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/top/reset} -radix hex {0 0ns}
+run 10ns
+add_force {/top/data_in_vld} -radix hex {1 0ns}
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {02 0ns}
+run 100ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source top.tcl
+-- Next if statement is to ensure ack is asserted one cycle later when rd_data is ready 
+restart
+add_force {/top/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/top/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/top/reset} -radix hex {0 0ns}
+run 10ns
+add_force {/top/data_in_vld} -radix hex {1 0ns}
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {02 0ns}
+run 100ns
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source top.tcl
+restart
+add_force {/top/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/top/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/top/reset} -radix hex {0 0ns}
+run 10ns
+add_force {/top/data_in_vld} -radix hex {1 0ns}
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {02 0ns}
+run 100ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source top.tcl
+restart
+add_force {/top/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/top/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/top/reset} -radix hex {0 0ns}
+run 10ns
+add_force {/top/data_in_vld} -radix hex {1 0ns}
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {02 0ns}
+run 100ns
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source top.tcl
+restart
+add_force {/top/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/top/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/top/reset} -radix hex {0 0ns}
+run 10ns
+add_force {/top/data_in_vld} -radix hex {1 0ns}
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {02 0ns}
+run 100ns
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source top.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source top.tcl
+restart
+add_force {/top/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/top/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/top/reset} -radix hex {0 0ns}
+run 10ns
+add_force {/top/data_in_vld} -radix hex {1 0ns}
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {23 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {02 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {aa 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {55 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {aa 0ns}
+run 100ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {02 0ns}
+run 100ns
+restart
+add_force {/top/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/top/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/top/reset} -radix hex {0 0ns}
+run 10ns
+add_force {/top/data_in_vld} -radix hex {1 0ns}
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {23 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {02 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {aa 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {55 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {aa 0ns}
+run 100ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {02 0ns}
+run 100ns
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source top.tcl
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+restart
+add_force {/top/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/top/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/top/reset} -radix hex {0 0ns}
+run 10ns
+add_force {/top/data_in_vld} -radix hex {1 0ns}
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {23 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {02 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {aa 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {55 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {aa 0ns}
+run 100ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {02 0ns}
+run 100ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source top.tcl
+restart
+add_force {/top/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/top/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/top/reset} -radix hex {0 0ns}
+run 10ns
+add_force {/top/data_in_vld} -radix hex {1 0ns}
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {23 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {02 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {aa 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {55 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {aa 0ns}
+run 100ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {02 0ns}
+run 100ns
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+save_wave_config {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source top.tcl
+restart
+add_force {/top/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/top/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/top/reset} -radix hex {0 0ns}
+run 10ns
+add_force {/top/data_in_vld} -radix hex {1 0ns}
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {23 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {02 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {aa 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {55 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {aa 0ns}
+run 100ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {02 0ns}
+run 100ns
+close_sim
+close [ open C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/testbench.vhd w ]
+add_files C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/testbench.vhd
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top testbench [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+export_ip_user_files -of_objects  [get_files C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/testbench.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/testbench.vhd
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source top.tcl
+restart
+add_force {/top/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/top/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/top/reset} -radix hex {0 0ns}
+run 10ns
+add_force {/top/data_in_vld} -radix hex {1 0ns}
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {03 0ns}
+run 100ns
+run 100ns
+restart
+add_force {/top/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/top/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/top/reset} -radix hex {0 0ns}
+run 10ns
+add_force {/top/data_in_vld} -radix hex {1 0ns}
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 100ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 100ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source top.tcl
+restart
+add_force {/top/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/top/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/top/reset} -radix hex {0 0ns}
+run 10ns
+add_force {/top/data_in_vld} -radix hex {1 0ns}
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 100ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 100ns
+restart
+add_force {/top/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/top/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/top/reset} -radix hex {0 0ns}
+run 10ns
+add_force {/top/data_in_vld} -radix hex {1 0ns}
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {23 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {02 0ns}
+run 100ns
+add_force {/top/data_in} -radix hex {aa 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {55 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {aa 0ns}
+run 100ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {02 0ns}
+run 100ns
+restart
+add_force {/top/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/top/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/top/reset} -radix hex {0 0ns}
+run 10ns
+add_force {/top/data_in_vld} -radix hex {1 0ns}
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {23 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {02 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {aa 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {55 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {aa 0ns}
+run 100ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {02 0ns}
+run 100ns
+run 100ns
+restart
+add_force {/top/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/top/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/top/reset} -radix hex {0 0ns}
+run 10ns
+add_force {/top/data_in_vld} -radix hex {1 0ns}
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {23 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {02 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {aa 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {55 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {aa 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {02 0ns}
+run 100ns
+run 100ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source top.tcl
+restart
+add_force {/top/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/top/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/top/reset} -radix hex {0 0ns}
+run 10ns
+add_force {/top/data_in_vld} -radix hex {1 0ns}
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {23 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {02 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {aa 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {55 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {aa 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {02 0ns}
+run 100ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+source top.tcl
+restart
+add_force {/top/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/top/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/top/reset} -radix hex {0 0ns}
+run 10ns
+add_force {/top/data_in_vld} -radix hex {1 0ns}
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {23 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {02 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {aa 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {55 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {aa 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {02 0ns}
+run 100ns
+restart
+add_force {/top/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/top/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/top/reset} -radix hex {0 0ns}
+run 10ns
+add_force {/top/data_in_vld} -radix hex {1 0ns}
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {23 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {01 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {aa 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {55 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {e7 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/top/data_in} -radix hex {01 0ns}
+run 100ns
+run 100ns
 close_sim

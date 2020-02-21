@@ -1,0 +1,49 @@
+restart
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10 ns
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {1 0ns}
+add_force {/register_fsm/rd_data} -radix hex {aae755e7 0ns}
+run 10ns
+add_force {/register_fsm/rd_ack} -radix hex {0 0ns}
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+run 10ns
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

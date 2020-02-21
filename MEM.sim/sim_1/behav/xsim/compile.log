@@ -1,2 +1,4 @@
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/register_fsm.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'register_fsm'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/chine/Desktop/MEM/MEM.srcs/sources_1/new/design.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top'

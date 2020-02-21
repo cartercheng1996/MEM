@@ -1,6 +1,6 @@
 Vivado Simulator 2019.2
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 4c85156f26b4429fb9d533a5abbad449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot register_fsm_behav xil_defaultlib.register_fsm -log elaborate.log 
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 4c85156f26b4429fb9d533a5abbad449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_behav xil_defaultlib.top -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -11,5 +11,9 @@ Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
-Compiling architecture rtl of entity xil_defaultlib.register_fsm
-Built simulation snapshot register_fsm_behav
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture rtl of entity xil_defaultlib.register_fsm [register_fsm_default]
+Compiling architecture beh of entity xil_defaultlib.memory_model [memory_model_default]
+Compiling architecture rtl of entity xil_defaultlib.top
+Built simulation snapshot top_behav

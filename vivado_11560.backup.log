@@ -1,0 +1,188 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Feb 21 08:19:48 2020
+# Process ID: 11560
+# Current directory: C:/Users/chine/Desktop/MEM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17852 C:\Users\chine\Desktop\MEM\MEM.xpr
+# Log file: C:/Users/chine/Desktop/MEM/vivado.log
+# Journal file: C:/Users/chine/Desktop/MEM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/chine/Desktop/MEM/MEM.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 21 08:20:09 2020...
+ peak = 1058.738 ; gain = 135.637
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'register_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj register_fsm_vhdl.prj"
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1058.738 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+"xelab -wto 4c85156f26b4429fb9d533a5abbad449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot register_fsm_behav xil_defaultlib.register_fsm -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 4c85156f26b4429fb9d533a5abbad449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot register_fsm_behav xil_defaultlib.register_fsm -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1058.738 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/chine/Desktop/MEM/MEM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "register_fsm_behav -key {Behavioral:sim_1:Functional:register_fsm} -tclbatch {register_fsm.tcl} -view {C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config C:/Users/chine/Desktop/MEM/register_fsm_behav.wcfg
+open_wave_config: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1058.738 ; gain = 0.000
+source register_fsm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1058.738 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'register_fsm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 1058.738 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1058.738 ; gain = 0.000
+add_force {/register_fsm/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+force1
+add_force {/register_fsm/reset} -radix hex {1 0ns}
+force2
+run 10ns
+add_force {/register_fsm/reset} -radix hex {0 0ns}
+force3
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+force4
+add_force {/register_fsm/data_in_vld} -radix hex {1 0ns}
+force5
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {23 0ns}
+force6
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+force7
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+force8
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+force9
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {02 0ns}
+force10
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {aa 0ns}
+force11
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+force12
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+force13
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {55 0ns}
+force14
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {aa 0ns}
+force15
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+force16
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {13 0ns}
+force17
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+force18
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+force19
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {00 0ns}
+force20
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {01 0ns}
+force21
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+force22
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {23 0ns}
+force23
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+force24
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+force25
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+force26
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+force27
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+force28
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+force29
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+force30
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+force31
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+force32
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+force33
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+force34
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+force35
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+force36
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+force37
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+force38
+run 10ns
+add_force {/register_fsm/data_in} -radix hex {e7 0ns}
+force39
+run 10ns
+restart
